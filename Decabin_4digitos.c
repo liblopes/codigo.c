@@ -11,13 +11,13 @@ int main(void)
     printf("Digite um numero de ate 4 digitos:\n");
     scanf("%d", &quociente);
 
-    if (quociente<2){ // Quociente <2 guarda ele mesmo na posiÁao, sempre sera 1 ou 0
+    if (quociente<2){ // Quociente <2 guarda ele mesmo na posi√ßao, sempre sera 1 ou 0
         resultado[posicao] = quociente;
     }
 
 
 
-    while (quociente>=2) { //Enquanto o quociente for >=2 ele vai fazer a divis„o
+    while (quociente>=2) { //Enquanto o quociente for >=2 ele vai fazer a divis√£o
         resto = quociente%2; // Acha o resto da divisao, sempre sera o zero ou 1
         quociente = quociente/2; // Acha o novo quociente e guarda na propria variavel quociente
 
