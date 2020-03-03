@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+double pot(double a, int b) {
+    if (b==0)  {
+        return 1;
+    }
+
+    double resultado=a;
+
+    for (int i=1; i<b; i++) {
+        resultado = resultado * a;
+    }
+    return resultado;
+}
+
+
+int main()
+{
+ double numero=0;
+ int potencia=0;
+
+  printf("Digite numero :");
+  scanf("%lf",&numero);
+  printf("\n");
+
+  printf("Digite a potencia:");
+  scanf("%d",&potencia);
+  printf("\n");
+
+
+  printf("o resultado eh: %lf", pot(numero, potencia));
+
+
+    return 0;
+}
+
