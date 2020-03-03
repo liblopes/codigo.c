@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int pot(int a, int b) {
+    if (b==0)  {
+        return 1;
+    }
+
+    int resultado=a;
+
+    for (int i=1; i<b; i++) {
+        resultado = resultado * a;
+    }
+    return resultado;
+}
+
+
+int main()
+{
+
+ for (int numero=2; numero<11; numero++) {
+    for (int potencia=0; potencia<11; potencia++) {
+        printf("A potencia de %d ^ %d = ",numero, potencia);
+        printf("%d", pot(numero, potencia));
+        printf("\n");
+    }
+    printf("\n");
+ }
+
+
+
+
+    return 0;
