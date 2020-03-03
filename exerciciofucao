@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void imprime_valor_na_tela(int valor) {
+
+  printf("A soma dos dois numeros é :");
+  printf("\n");
+  printf("%d",valor);
+}
+
+int soma_dois_numeros(int x, int y) {
+    return x+y;
+}
+
+
+int main()
+{
+ int numero1=0;
+ int numero2=0;
+ int soma=0;
+
+  printf("Digite o valor do primeiro numero :");
+  scanf("%d",&numero1);
+  printf("\n");
+
+  printf("Digite o valor do segundo numero :");
+  scanf("%d",&numero2);
+  printf("\n");
+
+  soma = soma_dois_numeros(numero1, numero2) ;
+
+  //printf("A soma dos dois numeros é :");
+  //printf("\n");
+  //printf("%d",soma);
+
+  imprime_valor_na_tela(soma);
+
+    return 0;
+}
